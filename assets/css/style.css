@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content:space-around;
+  background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
+  padding: 20px;
+
+
+}
+
+input,button{
+  font-size: 16px;
+  height: 30px;
+  line-height: 8px;
+  margin-top: 20px;
+}
+
+.win-loss-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+  border-bottom:30px #879274;
+  text-size-adjust: 30px;
+  width: 100%;
+  align-self: start;
+  border-radius: 8px;
+
+}
+
+main {
+ 
+   display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  
+  
+}
+
+section {
+  flex: 0 auto;
+  padding: 8px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.word-guess {
+  width: 50%;
+  padding: 50px;
+  height: 500px;
+/* justify-content: center; */
+  
+  
+
+
+}
+
+.results {
+  padding: 10px;
+  width: 50%;
+  height: 200px;
+  /* align-items:flex-start; */
+}
+
+.card {
+  background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+
+.word-guess {
+ background: #fff;  
+ align-items: column;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.word-blanks {
+  line-height: 700px;
+  align-items: center;
+
+}
+
+.large-font {
+  font-size: 1.5em;
+  text-align:center;
+}
+
+.timer {
+  height: 240px;
+  padding: 10px;
+  background: #13293d;
+  color: #fff;
+  text-align: center;
+}
+
+.timer-text {
+  padding: 55px;
+}
+
+@media screen and (max-width: 1183px) {
+  main {
+    flex-direction: column;
+  }
+
+  .word-guess,
+  .results {
+    width: 90vw;
+  }
+
+  section {
+    background-color: white;
+    margin: 20px auto;
+    width: 92vw;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .large-font {
+    font-size: 2em;
+  }
+
+  .reset-button {
+    font-size: 12px;
+    width: 20ox;
+    
+  }
+
+  .timer {
+    height: 200px;
+  }
+}
